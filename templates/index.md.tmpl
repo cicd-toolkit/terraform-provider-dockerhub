@@ -1,0 +1,31 @@
+---
+layout: ""
+page_title: "Provider: dockerhub"
+description: |-
+  Register hub.docker.com repositories.
+---
+
+# Docker Hub Provider
+
+Lifecycle management of Docker Hub using the v2 API.
+
+This provider enables management of Docker Hub registries, groups, permissions and access tokens.
+
+## Installation
+
+The provider can be installed and managed automatically by Terraform. Sample `versions.tf` file:
+
+{{tffile "examples/provider/installation.tf"}}
+
+## Configuration
+
+{{tffile "examples/provider/configuration.tf"}}
+
+### Argument Reference
+
+- **password** (String) Password for authentication.
+- **username** (String) Username for authentication.
+
+## Example
+
+{{tffile "examples/full.tf"}}
